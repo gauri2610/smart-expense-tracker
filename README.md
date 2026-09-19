@@ -67,6 +67,12 @@ This project was developed as an academic project to gain practical experience i
 
 This project was developed as an academic Android application project to gain practical experience in Java, Android development, UI design, database management, and application development.
 
+📱 **Smart Expense Tracker**
+Android application developed using **Java and Android Studio** for managing expenses, income, budgets and financial analysis.
+
+🔗 [View Project](https://github.com/gauri2610/smart-expense-tracker)
+
+
 🧠 **Quiz Application**
 Android quiz application developed using **Java and Android Studio**, featuring multiple quiz categories, timer, score tracking and an interactive user interface.
 

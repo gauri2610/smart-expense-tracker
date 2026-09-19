@@ -10,57 +10,57 @@ This project was developed as an academic project to gain practical experience i
 
 ## ✨ Features
 
-- 🔐 User Registration & Login
-- 💰 Add and manage expenses
-- 💵 Add and manage income
-- 📊 Dashboard for financial overview
-- 🧾 Transaction history
-- 🎯 Budget management
-- 📈 Expense analysis and reports
-- 👤 User profile
-- 🔔 Expense reminders
-- ⚙️ Application settings
+* 🔐 User Registration & Login
+* 💰 Add and manage expenses
+* 💵 Add and manage income
+* 📊 Dashboard for financial overview
+* 🧾 Transaction history
+* 🎯 Budget management
+* 📈 Expense analysis and reports
+* 👤 User profile
+* 🔔 Expense reminders
+* ⚙️ Application settings
 
 ## 🛠️ Technologies Used
 
-- Java
-- Android Studio
-- XML
-- Gradle
-- SQLite / Local Database
+* Java
+* Android Studio
+* XML
+* Gradle
+* SQLite / Local Database
 
 ## 📱 Application Screenshots
 
 ### 1. Welcome to Expense Tracker
 
-![Welcome to Expense Tracker](home.jpeg)
+![Welcome to Expense Tracker](expens/home.jpeg)
 
 ### 2. Dashboard
 
-![Dashboard](dashboard.jpeg)
+![Dashboard](expens/dashboard.jpeg)
 
 ### 3. Budget Management
 
-![Budget Management](budget-management.jpeg)
+![Budget Management](expens/budget%20management.jpeg)
 
 ### 4. Expense Analysis
 
-![Expense Analysis](expense-analysis.jpeg)
+![Expense Analysis](expens/expense%20analysis.jpeg)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Android Studio
-- JDK
-- Android SDK
+* Android Studio
+* JDK
+* Android SDK
 
 ### Installation
 
 1. Clone this repository.
 2. Open the project in Android Studio.
 3. Let Gradle sync complete.
-4. Connect an Android device or start an emulator.
+4. Connect an Android device or start an Android Emulator.
 5. Build and run the application.
 
 ## 🎓 Academic Project
@@ -74,3 +74,4 @@ This project was developed as an academic Android application project to gain pr
 BE Computer Engineering Student | SPPU, Pune
 
 GitHub: [@gauri2610](https://github.com/gauri2610)
+

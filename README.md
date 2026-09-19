@@ -1,72 +1,74 @@
-# \# Smart Expense Tracker 📱
+# Smart Expense Tracker 📱
 
-# 
+A smart and user-friendly Android application for managing personal expenses and income efficiently.
 
-# A smart and user-friendly Android application for managing personal expenses and income efficiently.
+## 📌 About the Project
 
-# 
+**Smart Expense Tracker** is an Android application developed using **Java and Android Studio**. The app helps users manage daily expenses and income, track transactions, set budgets, and view financial information in an organized way.
 
-# \## About the Project
+## ✨ Features
 
-# 
+* 🔐 User Registration & Login
+* 💰 Add and manage expenses
+* 💵 Add and manage income
+* 📊 Dashboard for financial overview
+* 🧾 Transaction history
+* 🎯 Budget management
+* 📈 Expense reports
+* 👤 User profile
+* 🔔 Expense reminders
+* ⚙️ Settings
 
-# Smart Expense Tracker is an Android application developed using Java and Android Studio. The app helps users manage their daily expenses and income, track transactions, set budgets, and view financial information in an organized way.
+## 🛠️ Technologies Used
 
-# 
+* Java
+* Android Studio
+* XML
+* Gradle
+* SQLite / Local Database
 
-# \## Features
+## 📸 Screenshots
 
-# 
+### Login & Register
 
-# \- User Registration \& Login
+![Login Screen](screenshots/WhatsApp%20Image%202026-08-30%20at%202.56.22%20PM%20\(1\).jpeg)
 
-# \- Add and manage expenses
+### Dashboard
 
-# \- Add and manage income
+![Dashboard](screenshots/WhatsApp%20Image%202026-08-30%20at%202.56.22%20PM.jpeg)
 
-# \- Dashboard for financial overview
+### Add Expense
 
-# \- Transaction history
+![Add Expense](screenshots/WhatsApp%20Image%202026-08-30%20at%202.57.31%20PM.jpeg)
 
-# \- Budget management
+### Application Screen
 
-# \- Expense reports
+![Application Screen](screenshots/WhatsApp%20Image%202026-08-30%20at%203.28.38%20PM.jpeg)
 
-# \- User profile
+## 🚀 Getting Started
 
-# \- Expense reminders
+### Prerequisites
 
-# \- Settings
+* Android Studio
+* JDK
+* Android SDK
 
-# 
+### Installation
 
-# \## Technologies Used
+1. Clone this repository.
+2. Open the project in Android Studio.
+3. Let Gradle sync complete.
+4. Connect an Android device or start an emulator.
+5. Build and run the application.
 
-# 
+## 🎓 Academic Project
 
-# \- Java
+This project was developed as an academic Android application project to gain practical experience in Java, Android development, UI design, database management, and application development.
 
-# \- Android Studio
+## 👩‍💻 Developer
 
-# \- XML
+**Gauri Wankhede**
 
-# \- Gradle
+Computer Engineering Student | SPPU, Pune
 
-# \- SQLite / Local Database
-
-# 
-
-# \## Developer
-
-# 
-
-# Gauri Wankhede
-
-# 
-
-# Computer Engineering Student | SPPU, Pune
-
-# 
-
-# GitHub: https://github.com/gauri2610
-
+GitHub: [@gauri2610](https://github.com/gauri2610)

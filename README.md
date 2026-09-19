@@ -8,6 +8,15 @@ A smart and user-friendly Android application for managing personal expenses and
 
 This project was developed as an academic project to gain practical experience in **Android application development, Java programming, UI design, database management, and software development**.
 
+### 🛠️ Skills
+- Java
+- Python
+- HTML & CSS
+- Android Studio
+- XML
+- Git & GitHub
+- Web Development
+
 ## ✨ Features
 
 * 🔐 User Registration & Login

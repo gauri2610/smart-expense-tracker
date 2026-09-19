@@ -4,54 +4,56 @@ A smart and user-friendly Android application for managing personal expenses and
 
 ## 📌 About the Project
 
-**Smart Expense Tracker** is an Android application developed using **Java and Android Studio**. The app helps users manage daily expenses and income, track transactions, set budgets, and view financial information in an organized way.
+**Smart Expense Tracker** is an Android application developed using **Java and Android Studio**. The application helps users manage their daily expenses and income, track transactions, manage budgets, and view financial information in an organized way.
+
+This project was developed as an academic project to gain practical experience in **Android application development, Java programming, UI design, database management, and software development**.
 
 ## ✨ Features
 
-* 🔐 User Registration & Login
-* 💰 Add and manage expenses
-* 💵 Add and manage income
-* 📊 Dashboard for financial overview
-* 🧾 Transaction history
-* 🎯 Budget management
-* 📈 Expense reports
-* 👤 User profile
-* 🔔 Expense reminders
-* ⚙️ Settings
+- 🔐 User Registration & Login
+- 💰 Add and manage expenses
+- 💵 Add and manage income
+- 📊 Dashboard for financial overview
+- 🧾 Transaction history
+- 🎯 Budget management
+- 📈 Expense analysis and reports
+- 👤 User profile
+- 🔔 Expense reminders
+- ⚙️ Application settings
 
 ## 🛠️ Technologies Used
 
-* Java
-* Android Studio
-* XML
-* Gradle
-* SQLite / Local Database
+- Java
+- Android Studio
+- XML
+- Gradle
+- SQLite / Local Database
 
-## 📸 Screenshots
+## 📱 Application Screenshots
 
-### Login & Register
+### 1. Welcome to Expense Tracker
 
-![Login Screen](screenshots/WhatsApp%20Image%202026-08-30%20at%202.56.22%20PM%20\(1\).jpeg)
+![Welcome to Expense Tracker](home.jpeg)
 
-### Dashboard
+### 2. Dashboard
 
-![Dashboard](screenshots/WhatsApp%20Image%202026-08-30%20at%202.56.22%20PM.jpeg)
+![Dashboard](dashboard.jpeg)
 
-### Add Expense
+### 3. Budget Management
 
-![Add Expense](screenshots/WhatsApp%20Image%202026-08-30%20at%202.57.31%20PM.jpeg)
+![Budget Management](budget-management.jpeg)
 
-### Application Screen
+### 4. Expense Analysis
 
-![Application Screen](screenshots/WhatsApp%20Image%202026-08-30%20at%203.28.38%20PM.jpeg)
+![Expense Analysis](expense-analysis.jpeg)
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-* Android Studio
-* JDK
-* Android SDK
+- Android Studio
+- JDK
+- Android SDK
 
 ### Installation
 
@@ -69,6 +71,6 @@ This project was developed as an academic Android application project to gain pr
 
 **Gauri Wankhede**
 
-Computer Engineering Student | SPPU, Pune
+BE Computer Engineering Student | SPPU, Pune
 
 GitHub: [@gauri2610](https://github.com/gauri2610)

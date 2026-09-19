@@ -1,0 +1,18 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#6200EE</color> <!-- Purple for Dark Mode -->
+    <color name="primary_dark">#3700B3</color> <!-- Dark Purple -->
+    <color name="primary_variant_dark">#1C1B1F</color> <!-- Dark variant for dark mode -->
+
+    <!-- Background -->
+    <color name="app_bg">#121212</color> <!-- Dark Background -->
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color> <!-- White Text for Dark Mode -->
+    <color name="text_secondary">#B0B0B0</color> <!-- Light Gray Text for Dark Mode -->
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="accent">#BB86FC</color> <!-- Accent color for Dark Mode -->
+</resources>

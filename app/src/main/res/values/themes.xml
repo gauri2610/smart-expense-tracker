@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main App Theme -->
+    <style name="Theme.SmartExpenseTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background -->
+        <item name="android:windowBackground">@color/app_bg</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        <!-- Text Input Style -->
+        <item name="textInputStyle">
+            @style/Widget.MaterialComponents.TextInputLayout.OutlinedBox
+        </item>
+
+        <!-- Button Style -->
+        <item name="materialButtonStyle">
+            @style/Widget.MaterialComponents.Button
+        </item>
+
+    </style>
+
+    <!-- Dark App Theme -->
+    <style name="Theme.SmartExpenseTracker.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.SmartExpenseTracker.Splash"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+    </style>
+
+</resources>

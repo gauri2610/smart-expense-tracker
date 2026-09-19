@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F7">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBudget"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#1976D2"
+        android:elevation="4dp"
+        app:title="Budget Manager"
+        app:titleTextColor="@android:color/white"/>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 💰 SUMMARY CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:padding="20dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monthly Budget"
+                        android:textSize="14sp"
+                        android:textColor="#777"/>
+
+                    <TextView
+                        android:id="@+id/tvMonthlyBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹0"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/tvExpensesThisMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spent ₹0"
+                        android:textSize="16sp"
+                        android:textColor="#FF5252"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvRemainingBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining ₹0"
+                        android:textSize="16sp"
+                        android:textColor="#4CAF50"
+                        android:layout_marginTop="4dp"/>
+
+                    <!-- 📊 Progress -->
+                    <ProgressBar
+                        android:id="@+id/budgetProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="12dp"
+                        android:max="100"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- 🤖 AI CARD -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#E3F2FD"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/aiBudgetText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="🤖 AI insight will appear here..."
+                    android:textColor="#000"
+                    android:textSize="16sp"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ✏️ UPDATE SECTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Budget"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- INPUT -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Budget Amount"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#1976D2"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusBottomEnd="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBudgetAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:textColor="#000000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- SAVE BUTTON -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveBudget"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Save Budget"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#1976D2"
+                android:textColor="@android:color/white"
+                app:cornerRadius="14dp"
+                android:elevation="6dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

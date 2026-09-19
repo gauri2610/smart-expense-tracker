@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- PROFILE -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"/>
+
+
+        <!-- BALANCE CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#1E2A38"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Balance"
+                    android:textColor="#B0BEC5"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 0"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- THEME SWITCH -->
+        <Switch
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Mode"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- 📊 SUMMARY CARDS -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="16dp">
+
+            <!-- INCOME -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#1E2A38">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#B0BEC5"/>
+
+                    <TextView
+                        android:id="@+id/tvIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹0"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- EXPENSE -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#1E2A38">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:textColor="#B0BEC5"/>
+
+                    <TextView
+                        android:id="@+id/tvExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹0"
+                        android:textColor="#FF5252"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- REMAINING -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#1E2A38">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining"
+                        android:textColor="#B0BEC5"/>
+
+                    <TextView
+                        android:id="@+id/tvRemaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹0"
+                        android:textColor="#FFC107"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- PIE CHART -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#1E2A38"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ACTION BUTTONS -->
+        <Button
+            android:id="@+id/addExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/addIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_bg"
+            android:text="Add Income"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reports"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/budgetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 🤖 AI INSIGHT CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#1E2A38"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/aiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🤖 AI Insight will appear here..."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- LIST -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

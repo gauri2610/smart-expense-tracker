@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Theme Colors -->
+    <color name="primary">#2563EB</color>
+    <color name="primary_dark">#1E40AF</color>
+    <color name="accent">#3B82F6</color>
+
+    <!-- Missing colors (Fix for errors) -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="blue">#2196F3</color>
+
+    <!-- App Background -->
+    <color name="app_bg">#F5F7FB</color>
+
+    <!-- Income / Expense -->
+    <color name="income_green">#22C55E</color>
+    <color name="expense_red">#EF4444</color>
+
+    <!-- Card Background -->
+    <color name="card_bg">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Navigation Item Color (Fix for Dashboard error) -->
+    <color name="nav_item_color">#2563EB</color>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- APP LOGO / TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Expense"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- EMAIL CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#1E2A38"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B0BEC5"
+                android:padding="16dp"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- PASSWORD CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#1E2A38"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B0BEC5"
+                android:padding="16dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- LOGIN BUTTON -->
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- REGISTER -->
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New user? Register"
+            android:textColor="#00B9F1"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

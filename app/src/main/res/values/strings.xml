@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ExpenseTracker</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="new_user_register">New user? Register</string>
+
+    <!-- Categories -->
+    <string-array name="categories">
+        <item>Food</item>
+        <item>Travel</item>
+        <item>Shopping</item>
+        <item>Bills</item>
+        <item>Rent</item>
+        <item>Entertainment</item>
+        <item>General</item>
+    </string-array>
+
+    <string-array name="income_types">
+        <item>Salary</item>
+        <item>Freelance</item>
+        <item>Business</item>
+        <item>Bonus</item>
+        <item>Other</item>
+    </string-array>
+</resources>

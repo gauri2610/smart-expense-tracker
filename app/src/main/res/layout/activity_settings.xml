@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Settings"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- DARK MODE -->
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌙 Dark Mode"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- NOTIFICATION -->
+        <Switch
+            android:id="@+id/switchNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔔 Daily Reminder"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- CURRENCY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💱 Select Currency"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="6dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ALERT LIMIT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Budget Alert (%)"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="6dp"/>
+
+        <SeekBar
+            android:id="@+id/seekAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvAlertValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- CLEAR DATA -->
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧹 Clear All Data"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- SAVE -->
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Settings"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"/>
+
+    </LinearLayout>
+
+</ScrollView>

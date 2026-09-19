@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💰 Add Income"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- AMOUNT -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#1E2A38">
+
+            <EditText
+                android:id="@+id/incomeAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Amount ₹"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B0BEC5"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:padding="18dp"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- TYPE (NEW 🔥) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#1E2A38">
+
+            <Spinner
+                android:id="@+id/incomeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:entries="@array/income_types"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- SOURCE -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#1E2A38">
+
+            <EditText
+                android:id="@+id/incomeSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Source (Salary / Freelance / Business)"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B0BEC5"
+                android:padding="16dp"
+                android:background="@android:color/transparent"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- NOTE (NEW 🔥) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#1E2A38">
+
+            <EditText
+                android:id="@+id/incomeNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Note (optional)"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B0BEC5"
+                android:padding="16dp"
+                android:background="@android:color/transparent"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- QUICK OPTIONS (NEW 🔥) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:text="Salary"
+                android:onClick="quickFillSalary"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"/>
+
+            <Button
+                android:text="Freelance"
+                android:onClick="quickFillFreelance"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"/>
+
+            <Button
+                android:text="Business"
+                android:onClick="quickFillBusiness"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <!-- DATE -->
+        <Button
+            android:id="@+id/dateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Select Date"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- VOICE -->
+        <Button
+            android:id="@+id/voiceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎤 Speak Income"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- SAVE -->
+        <Button
+            android:id="@+id/saveIncome"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Save Income"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_bg"/>
+
+        <TextView
+            android:id="@+id/aiIncomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 AI insight will appear here..."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
